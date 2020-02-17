@@ -1,4 +1,7 @@
-// Log to console
-console.log('Hello World');
-console.error('This is some error');
-console.warn('This is a warning');
+// Number to string
+val = String(5);
+
+// Output
+console.log(val);
+console.log(typeof val);
+console.log(val.length);
