@@ -15,7 +15,16 @@ val = String([1, 2, 3, 4]);
 val = (5).toString();
 val = true.toString();
 
+// String to number
+val = Number("5");
+val = Number(true);
+val = Number(false);
+val = Number(null);
+val = Number("hello");
+val = Number([1, 2, 3]);
+
 // Output
 console.log(val);
 console.log(typeof val);
-console.log(val.length);
+// console.log(val.length);
+console.log(val.toFixed());
