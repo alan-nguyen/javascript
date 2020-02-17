@@ -23,8 +23,11 @@ val = Number(null);
 val = Number("hello");
 val = Number([1, 2, 3]);
 
+val = parseInt("100.30");
+val = parseFloat("100.30");
+
 // Output
 console.log(val);
 console.log(typeof val);
 // console.log(val.length);
-console.log(val.toFixed());
+console.log(val.toFixed(2));
