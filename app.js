@@ -12,4 +12,10 @@ const square = function(x = 3) {
   return x * x;
 };
 
-console.log(square());
+// console.log(square());
+
+// IMMIDIATELEY INVOKABLE FUNCTION EXPRESSION - IIFEs
+
+(function(name = "Stranger") {
+  console.log("Hello " + name);
+})();
