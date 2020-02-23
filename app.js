@@ -1,8 +1,8 @@
 // Person constructor
-function Person(name) {
+function Person(name, age) {
   this.name = name;
-  console.log(this);
+  this.age = age;
 }
 
-const alan = new Person("Alan");
-const Aaden = new Person("Aaden");
+const alan = new Person("Alan", 29);
+const Aaden = new Person("Aaden", 4);
