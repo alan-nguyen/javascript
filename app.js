@@ -21,6 +21,12 @@ function Customer(firstName, lastName, phone, membership) {
   this.membership = membership;
 }
 
+// Inherit the Person protype methods
+Customer.prototype = Object.create(Person.prototype);
+
+// Make customer.protype return Customer
+Customer.prototype.constructor = Customer;
+
 // Create Customer
 const customer1 = new Customer("Tom", "Smith", "555-555-5555", "Standard");
 
