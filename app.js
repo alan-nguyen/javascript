@@ -18,9 +18,15 @@ class Person {
   getsMarried(newLastName) {
     this.lastName = newLastName;
   }
+
+  static addNumber(x, y) {
+    return x + y;
+  }
 }
 
 const mary = new Person("Mary", "Williams", "11-13-1979");
 
 mary.getsMarried("Thompson");
 console.log(mary);
+
+console.log(Person.addNumber(2, 5));
