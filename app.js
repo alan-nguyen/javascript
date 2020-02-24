@@ -14,8 +14,13 @@ class Person {
     const ageDate = new Date(diff);
     return Math.abs(ageDate.getUTCFullYear() - 1970);
   }
+
+  getsMarried(newLastName) {
+    this.lastName = newLastName;
+  }
 }
 
 const mary = new Person("Mary", "Williams", "11-13-1979");
 
-console.log(mary.calculateAge());
+mary.getsMarried("Thompson");
+console.log(mary);
