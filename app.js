@@ -1,27 +1,10 @@
-const personPrototypes = {
-  greeting: function() {
-    return `Hello there ${this.firstName} ${this.lastName}`;
-  },
-  getsMarried: function(newLastName) {
-    this.lastName = newLastName;
+class Person {
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
   }
-};
+}
 
-const mary = Object.create(personPrototypes);
-mary.firstName = "Mary";
-mary.lastName = "Williams";
-mary.age = 30;
+const mary = new Person("Mary", "Williams");
 
-mary.getsMarried("Thompson");
-
-console.log(mary.greeting());
 console.log(mary);
-
-const alan = Object.create(personPrototypes, {
-  firstName: { value: "Alan" },
-  lastName: { value: "Nguyen" },
-  age: { value: 29 }
-});
-
-console.log(alan);
-console.log(alan.greeting());
