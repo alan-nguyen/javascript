@@ -1,37 +1,14 @@
-document.getElementById("button").addEventListener("click", loadData);
+document.getElementById("button1").addEventListener("click", loadCustomer);
 
-function loadData() {
-  // Create an XHR Object
+function loadCustomer(e) {
   const xhr = new XMLHttpRequest();
 
-  // OPEN
-  xhr.open("GET", "data.txt", true);
-
-  // console.log("READYSTATE", xhr.readyState);
-
-  // Optional - Used for spinners / loaders
-  xhr.onprogress = function() {
-    console.log("READYSTATE", xhr.readyState);
-  };
+  xhr.open("GET", "customer.json", true);
 
   xhr.onload = function() {
-    console.log("READYSTATE", xhr.readyState);
     if (this.status === 200) {
-      // console.log(this.responseText);
-      document.getElementById(
-        "output"
-      ).innerHTML = `<h1>${this.responseText}</h1>`;
+      console.log(this.responseText);
     }
-  };
-
-  // xhr.onreadystatechange = function() {
-  //   if (this.status === 200 && this.readyState === 4) {
-  //     console.log(this.responseText);
-  //   }
-  // };
-
-  xhr.onerror = function() {
-    console.log("Request error ...");
   };
 
   xhr.send();
