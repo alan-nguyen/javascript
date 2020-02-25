@@ -27,5 +27,9 @@ function loadData() {
   //   }
   // };
 
+  xhr.onerror = function() {
+    console.log("Request error ...");
+  };
+
   xhr.send();
 }
