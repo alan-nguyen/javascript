@@ -10,11 +10,11 @@ const http = new easyHTTP();
 // });
 
 // Get Single Post
-// http.get("https://jsonplaceholder.typicode.com/posts/1", function(err, posts) {
+// http.get("https://jsonplaceholder.typicode.com/posts/1", function(err, post) {
 //   if (err) {
 //     console.log(err);
 //   } else {
-//     console.log(posts);
+//     console.log(post);
 //   }
 // });
 
@@ -25,3 +25,13 @@ const data = {
 };
 
 // Create Post
+http.post("https://jsonplaceholder.typicode.com/posts", data, function(
+  err,
+  post
+) {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(post);
+  }
+});
