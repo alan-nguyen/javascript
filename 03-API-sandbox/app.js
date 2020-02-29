@@ -29,7 +29,7 @@ function getJson() {
       data.forEach(function(post) {
         output += `<li>${post.title}</h1>`;
       });
-      document.getElementById("output").innerHTML = data;
+      document.getElementById("output").innerHTML = output;
     })
     .catch(function(err) {
       console.log(err);
