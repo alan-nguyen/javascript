@@ -8,5 +8,8 @@
 // };
 
 // One line function
-const sayHello = () => console.log("Hello");
-sayHello();
+// const sayHello = () => console.log("Hello");
+
+// Return object
+const sayHello = () => ({ msg: "Hello" });
+console.log(sayHello());
