@@ -14,6 +14,10 @@
 // const sayHello = () => ({ msg: "Hello" });
 
 //  Single param does not need parenthesis
-const sayHello = name => console.log(`Hello ${name}`);
+// const sayHello = name => console.log(`Hello ${name}`);
 
-sayHello("Alan");
+//  Multiple params need parenthesis
+const sayHello = (firstName, lastName) =>
+  console.log(`Hello ${firstName} ${lastName}`);
+
+sayHello("Alan", "Nguyen");
