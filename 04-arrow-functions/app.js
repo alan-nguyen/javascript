@@ -11,5 +11,9 @@
 // const sayHello = () => console.log("Hello");
 
 // Return object
-const sayHello = () => ({ msg: "Hello" });
-console.log(sayHello());
+// const sayHello = () => ({ msg: "Hello" });
+
+//  Single param does not need parenthesis
+const sayHello = name => console.log(`Hello ${name}`);
+
+sayHello("Alan");
