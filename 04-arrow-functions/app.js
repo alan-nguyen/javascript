@@ -17,7 +17,14 @@
 // const sayHello = name => console.log(`Hello ${name}`);
 
 //  Multiple params need parenthesis
-const sayHello = (firstName, lastName) =>
-  console.log(`Hello ${firstName} ${lastName}`);
+// const sayHello = (firstName, lastName) =>
+//   console.log(`Hello ${firstName} ${lastName}`);
 
-sayHello("Alan", "Nguyen");
+// sayHello("Alan", "Nguyen");
+
+const users = ["Emma", "Anna", "Pi"];
+
+const nameLengths = users.map(function(name) {
+  return name.length;
+});
+console.log(nameLengths);
