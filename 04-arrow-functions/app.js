@@ -24,7 +24,13 @@
 
 const users = ["Emma", "Anna", "Pi"];
 
-const nameLengths = users.map(function(name) {
+// const nameLengths = users.map(function(name) {
+//   return name.length;
+// });
+
+// Shorter
+const nameLengths = users.map(name => {
   return name.length;
 });
+
 console.log(nameLengths);
