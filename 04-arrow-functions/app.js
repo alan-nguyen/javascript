@@ -29,8 +29,10 @@ const users = ["Emma", "Anna", "Pi"];
 // });
 
 // Shorter
-const nameLengths = users.map(name => {
-  return name.length;
-});
+// const nameLengths = users.map(name => {
+//   return name.length;
+// });
 
+// Shortest
+const nameLengths = users.map(name => name.length);
 console.log(nameLengths);
