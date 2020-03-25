@@ -27,3 +27,11 @@ for (word of betterWords) {
     basicallyCount++;
   }
 }
+
+// Count sentences
+let sentenceCount = 0;
+for (word of storyWords) {
+  if (word.endsWith('.') || word.endsWith('!')) {
+    sentenceCount++;
+  }
+}
