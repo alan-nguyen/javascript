@@ -12,3 +12,18 @@ const storyWords = story.split(' ');
 const betterWords = storyWords.filter(word => {
   return !unnecessaryWords.includes(word);
 }, unnecessaryWords);
+
+// Count overused words
+let reallyCount = 0;
+let veryCount = 0;
+let basicallyCount = 0;
+
+for (word of betterWords) {
+  if (word === 'really') {
+    reallyCount++;
+  } else if (word === 'very') {
+    veryCount++;
+  } else if (word === 'basically') {
+    basicallyCount++;
+  }
+}
