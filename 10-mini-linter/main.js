@@ -4,3 +4,6 @@ let story =
 let overusedWords = ['really', 'very', 'basically'];
 
 let unnecessaryWords = ['extremely', 'literally', 'actually'];
+
+// Split story into words
+const storyWords = story.split(' ');
