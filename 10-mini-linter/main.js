@@ -35,3 +35,16 @@ for (word of storyWords) {
     sentenceCount++;
   }
 }
+
+// Print results
+console.log('Number of word: ', storyWords.length);
+
+console.log('Number of sentences: ', sentenceCount);
+
+// Number of times each overused word appears
+console.log('Really count: ', reallyCount);
+console.log('Very count: ', veryCount);
+console.log('Basically count: ', basicallyCount);
+
+// Better words array
+console.log(betterWords);
