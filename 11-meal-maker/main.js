@@ -39,5 +39,11 @@ const menu = {
       price: dishPrice
     };
     return this._courses[courseName].push(dish);
+  },
+  // Add random dish from course
+  getRandomDishFromCourse(courseName) {
+    const dishes = this._courses[courseName];
+    let indexDish = Math.floor(Math.random() * dishes.length);
+    return dishes[indexDish];
   }
 };
