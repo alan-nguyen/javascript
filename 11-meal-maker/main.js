@@ -68,3 +68,6 @@ menu.addDishToCourse('desserts', 'Milk Tea', 6.9);
 menu.addDishToCourse('appetizers', 'Kyoza', 4.9);
 menu.addDishToCourse('mains', 'Sushi', 18.4);
 menu.addDishToCourse('desserts', 'Macha', 5.2);
+
+const meal = menu.generateRandomMeal();
+console.log(meal);
