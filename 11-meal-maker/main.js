@@ -45,5 +45,14 @@ const menu = {
     const dishes = this._courses[courseName];
     let indexDish = Math.floor(Math.random() * dishes.length);
     return dishes[indexDish];
+  },
+  // Generate random meal
+  generateRandomMeal() {
+    const appetizer = this.getRandomDishFromCourse('appetizers');
+    const main = this.getRandomDishFromCourse('mains');
+    const dessert = this.getRandomDishFromCourse('desserts');
+    const totalPrice = appetizer.price + main.price + dessert.price;
+
+    return `Your meal is ${appetizer.name}, ${main.name}, ${dessert.name} and the total price is $${totalPrice}.`;
   }
 };
