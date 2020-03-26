@@ -23,5 +23,13 @@ const menu = {
   },
   set desserts(newDish) {
     this._courses.desserts = newDish;
+  },
+  // Get courses
+  get courses() {
+    return {
+      appetizers: this.appetizers,
+      mains: this.mains,
+      desserts: this.desserts
+    };
   }
 };
