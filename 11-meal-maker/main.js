@@ -56,3 +56,15 @@ const menu = {
     return `Your meal is ${appetizer.name}, ${main.name}, ${dessert.name} and the total price is $${totalPrice}.`;
   }
 };
+// Add dishes to course
+menu.addDishToCourse('appetizers', 'Caesar Salad', 4.25);
+menu.addDishToCourse('mains', 'Beef Pho', 12);
+menu.addDishToCourse('desserts', 'Green Tea Ice Cream', 3.45);
+
+menu.addDishToCourse('appetizers', 'Spring Rolls', 6.88);
+menu.addDishToCourse('mains', 'Roast chicken', 10.35);
+menu.addDishToCourse('desserts', 'Milk Tea', 6.9);
+
+menu.addDishToCourse('appetizers', 'Kyoza', 4.9);
+menu.addDishToCourse('mains', 'Sushi', 18.4);
+menu.addDishToCourse('desserts', 'Macha', 5.2);
