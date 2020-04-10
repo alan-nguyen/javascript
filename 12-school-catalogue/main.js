@@ -29,4 +29,9 @@ class School {
       `${this._name} educates ${this._numberOfStudents} students at the ${this._level} school level.`
     );
   }
+  // Static methods
+  static pickSubstituteTeacher(substituteTeachers) {
+    let randomIndex = Math.floor(Math.random() * substituteTeachers.length);
+    return substituteTeachers[randomIndex];
+  }
 }
