@@ -16,4 +16,17 @@ class School {
   get numberOfStudents() {
     return this._numberOfStudents;
   }
+  set numberOfStudents(newNumberOfStudents) {
+    if (typeof newNumberOfStudents === 'number') {
+      this._numberOfStudents = newNumberofStudents;
+    } else {
+      console.log('Invalid input: numberOfStudents must be set to a Number.');
+    }
+  }
+  // Print a quick fact
+  quickFacts() {
+    console.log(
+      `${this._name} educates ${this._numberOfStudents} students at the ${this._level} school level.`
+    );
+  }
 }
