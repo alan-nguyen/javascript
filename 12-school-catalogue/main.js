@@ -75,3 +75,12 @@ School.pickSubstituteTeacher([
   'Jason Terry',
   'Manu Ginobli',
 ]);
+
+const alSmith = new HighSchool('Al E. Smith', 415, [
+  'Baseball',
+  'Basketball',
+  'Volleyball',
+  'Track and Field',
+]);
+// console.log(alSmith);
+console.log(alSmith.sportsTeams);
