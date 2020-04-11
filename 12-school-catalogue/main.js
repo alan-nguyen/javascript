@@ -35,3 +35,14 @@ class School {
     return substituteTeachers[randomIndex];
   }
 }
+
+// Primary School
+class PrimarySchool extends School {
+  constructor(name, numberOfStudents, pickupPolicy) {
+    super(name, 'primary', numberOfStudents);
+    this._pickupPolicy = pickupPolicy;
+  }
+  get PrimarySchool() {
+    return this._level;
+  }
+}
